@@ -17,7 +17,8 @@ body {
 nav {
 width: 100%;
 min-height: 100px;
-background-color: rgb(32, 32, 32);
+background: rgb(4, 22, 36);
+background: linear-gradient(90deg, rgba(4, 22, 36, 1) 0%, rgba(3, 43, 71, 1) 50%, rgba(4, 22, 36, 1) 100%);
 }
 nav ul {
     width: 80%;
@@ -36,7 +37,12 @@ nav ul li a {
     display: block;
     justify-content: space-between;
 }
+.main-perso{
+    background: rgb(116, 195, 255);
+    background: linear-gradient(90deg, rgb(85, 176, 247) 0%, rgb(168, 217, 255) 50%, rgba(85, 176, 247) 100%);
+}
 .footer-perso{
     background: rgb(4, 22, 36);
     background: linear-gradient(90deg, rgba(4, 22, 36, 1) 0%, rgba(3, 43, 71, 1) 50%, rgba(4, 22, 36, 1) 100%);
+    color: white;
 }

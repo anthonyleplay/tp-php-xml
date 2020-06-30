@@ -1,5 +1,5 @@
 <?php
-    require_once 'assets/controller/controller.php';
+require_once 'assets/controller/controller.php';
 ?>
 
 
@@ -18,25 +18,30 @@
 
     <nav class="flex">
         <ul class="flex">
-            <?php foreach ($contenu as $key) {?>
+            <?php foreach ($contenu as $key) { ?>
                 <li><a href="index.php?page=<?= $key['id']; ?>"><?= $key->menu ?></a></li>
             <?php } ?>
         </ul>
     </nav>
+    <main class="main-perso">
+        <section class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <?= $contenu->page[intval($numpage)]->content ?>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <?= $contenu->page[intval($numpage)]->title ?>
-            <?= $contenu->page[intval($numpage)]->content ?>
-        
-
-<footer class="footer-perso">
-   <div class="contener">
-       <div class="row">
-           <div class="col-12 py-4 text-center">
-               <span>@copiright Félix Noël && Anthony Le Play</span>
-           </div>
-       </div>
-   </div>
-</footer>
+    <footer class="footer-perso">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-4 text-center">
+                    <span>@copiright Félix Noël && Anthony Le Play</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
