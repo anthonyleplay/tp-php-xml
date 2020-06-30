@@ -18,16 +18,13 @@
     <nav class="flex">
         <ul class="flex">
             <?php foreach ($contenu as $key) {?>
-
                 <li><a href="index.php?page=<?= $key['id']; ?>"><?= $key->menu ?></a></li>
-                
             <?php } ?>
         </ul>
     </nav>
 
-              
-            <?= $contenu->page[intval($numpage)]->title ;?>
-            <?= $contenu->page[intval($numpage)]->content ;?>
+            <?= $contenu->page[intval($numpage)]->title ?>
+            <?= $contenu->page[intval($numpage)]->content ?>
         
 </body>
 
