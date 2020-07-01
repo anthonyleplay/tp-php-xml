@@ -1,7 +1,0 @@
-
-    <?php foreach ($contenu as $key) { ?>
-                <?= $key->title ?>
-            <?php } ?>
-     <?php foreach ($contenu as $key) { ?>
-                <?= $key->content ?>
-            <?php } ?>

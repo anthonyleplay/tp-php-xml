@@ -3,3 +3,5 @@
   RewriteEngine on
   RewriteRule ^page-([0-3]+)$   index.php?page=$1 [L]
 </ifmodule>
+
+  ErrorDocument 404 /error.php
