@@ -19,7 +19,7 @@ require_once 'assets/controller/controller.php';
     <nav class="flex">
         <ul class="flex">
             <?php foreach ($contenu as $key) { ?>
-                <li><a href="index.php?page=<?= $key['id']; ?>"><?= $key->menu ?></a></li>
+                <li><a href="page-<?= $key['id']?>"><?= $key->menu ?></a></li>
             <?php } ?>
         </ul>
     </nav>
